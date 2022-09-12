@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1d1c;
+  color: #fafaf9;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header,
+#main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#header {
+  height: 20vh;
+  border-bottom: 1px solid #ccc;
+
+  justify-content: center;
+}
+
+#main {
+  margin-top: 2rem;
+  height: 80vh;
+
+  flex-direction: column;
+}
+
+#canvas {
+  display: block;
+  margin: 2rem auto;
+  width: 540px;
+  height: 540px;
+}
+
+/* header */
+.form__input,
+.form__button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid #ccc;
+  color: #fafaf9;
+  font-size: 2rem;
+}
+
+.form__input {
+  width: 500px;
+  padding: 0.5rem;
+}
+
+.form__button {
+  padding-bottom: 0.5rem;
+  margin: -0.5rem;
+  cursor: pointer;
+}
+
+/* list of todo */
+h3 {
+  font-size: 2.5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.list__container {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafaf9;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.list__item {
+  color: #1c1d1c;
+}
+
+.list__button {
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #1c1d1c;
+  cursor: pointer;
+}
